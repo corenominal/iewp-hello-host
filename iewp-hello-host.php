@@ -1,4 +1,5 @@
 <?php
+if ( ! defined( 'WPINC' ) ) { die('Direct access prohibited!'); }
 /**
  * Plugin Name: IEWP Hello Host
  * Plugin URI: https://github.com/corenominal/iewp-hello-host
@@ -23,7 +24,7 @@ add_action( 'admin_notices', 'iewp_hello_host' );
 
 /**
  * We need some CSS to position the paragraph
- */ 
+ */
 function iewp_host_css()
 {
 	// This makes sure that the positioning is also good for right-to-left languages
@@ -34,7 +35,7 @@ function iewp_host_css()
 	#host {
 		float: $x;
 		padding-$x: 15px;
-		padding-top: 5px;		
+		padding-top: 5px;
 		margin: 0;
 		font-size: 11px;
 	}
